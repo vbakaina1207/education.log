@@ -1,10 +1,10 @@
 @font-face {
-    font-family: 'myfont';
-    src:  url('../fonts/myfont.eot?qeg7wo');
-    src:  url('../fonts/myfont.eot?qeg7wo#iefix') format('embedded-opentype'),
-    url('../fonts/myfont.ttf?qeg7wo') format('truetype'),
-    url('../fonts/myfont.woff?qeg7wo') format('woff'),
-    url('../fonts/myfont.svg?qeg7wo#myfont') format('svg');
+    font-family: 'myfonts';
+    src:  url('../fonts/myfonts.eot?kxta52');
+    src:  url('../fonts/myfonts.eot?kxta52#iefix') format('embedded-opentype'),
+    url('../fonts/myfonts.ttf?kxta52') format('truetype'),
+    url('../fonts/myfonts.woff?kxta52') format('woff'),
+    url('../fonts/myfonts.svg?kxta52#myfonts') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -12,7 +12,7 @@
 
 i {
     /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'myfont' !important;
+    font-family: 'myfonts' !important;
     speak: never;
     font-style: normal;
     font-weight: normal;
@@ -25,34 +25,32 @@ i {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-be:before {
+.icon-fb:before {
     content: "\e900";
 }
-.icon-fb:before {
+.icon-insta:before {
     content: "\e901";
 }
-.icon-in:before {
+.icon-tv:before {
     content: "\e902";
 }
-.icon-tv:before {
+.icon-ut:before {
     content: "\e903";
 }
-.icon-vk:before {
-    content: "\e904";
-}
-.icon-yt:before {
-    content: "\e905";
-}
+
 
 /*Main style*/
+html body {
+    font-family: 'Nunito', sans-serif;
+}
 
 .wrapper {
     position: relative;
     width: 100%;
     max-width: 1130px;
     height: auto;
-    background: red;
-    margin: 0 auto;
+    /*background: red;*/
+    margin: 0 auto 30px;
 }
 
 .header {
@@ -66,7 +64,6 @@ i {
 a.links {
     height: 16px;
     color: #007fff;
-    font-family: "Nunito", sans-serif;
     font-size: 12px;
     font-weight: 800;
     line-height: 16px;
@@ -94,4 +91,35 @@ a.links {
 .central-block {
     width: 52px;
     height: 52px;
+}
+
+.main__head_text{
+    margin-top: 120px;
+}
+
+.main__head_text h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    color: #000000;
+}
+
+.main__head_text h1 span{
+    color: #007fff;
+}
+
+.main__head_link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.main__head_link a{
+    margin: 0 15px;
+    font-size: 20px;
+    color: #007fff;
+    text-decoration: none;
 }
