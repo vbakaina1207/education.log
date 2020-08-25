@@ -1,56 +1,229 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=on">
+    <title>Hello, world!</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/media.css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
+<div class="line">
+    <header>
+        <div class="top__line">
+            <div class="top__line_left">
+                <div class="top__line_left-menu">
+                    <ul>
+                        <li><a class="scroll-to" href="#Works">Works</a></li>
+                        <li><a class="scroll-to" href="#About">About</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="top__line_center">
+                <div class="top__line_center-logo">
+                    <a href="index.html"><img src="img/logo.webp" alt="img"></a>
+                </div>
+            </div>
+            <div class="top__line_right">
+                <div class="top__line_right-menu">
+                    <ul>
+                        <li><a class="scroll-to" href="#Links">Links</a></li>
+                        <li><a class="scroll-to" href="#Contacts">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="main__slogan">
+            <div class="main__slogan_head">
+                <h1>Motivation Is The First Step To <span>Success</span></h1>
+            </div>
+        </div>
+        <div class="social__line">
+            <a href="#" target="_blank"><span class="icon ed-tl"></span></a>
+            <a href="#" target="_blank"><span class="icon ed-fb"></span></a>
+            <a href="#" target="_blank"><span class="icon ed-in"></span></a>
+        </div>
+    </section>
+    <section>
+        <div id="Works"></div>
+        <div class="works">
+            <div class="works__head">
+                <h2>Works</h2>
+            </div>
+            <div class="works__left">
+                <div class="project" style="background-image: url(img/img_1.webp);">
+                    <div class="project__links">
+                        <a href="#" target="_blank">Featured</a>
+                    </div>
+                    <div class="project__text">
+                        Motivation Is The First Step To Success
+                    </div>
+                </div>
+                <div class="project" style="background-image: url(img/img_2.webp);">
+                    <div class="project__text">
+                        Benjamin Franklin S Method Of Habit Formation
+                    </div>
+                </div>
+            </div>
+            <div class="works__right">
+                <div class="project" style="background-image: url(img/img_3.webp);">
+                    <div class="project__text">
+                        How Great Is The Strength Of Your Belief
+                    </div>
+                </div>
+                <div class="project" style="background-image: url(img/img_4.webp);">
+                    <div class="project__links">
+                        <a href="#" target="_blank">Featured</a>
+                    </div>
+                    <div class="project__text">
+                        Increasing Prosperity With Positive Thinking
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="About"></div>
+        <div class="about">
+            <div class="about__head">
+                <h2>About</h2>
+            </div>
+            <div class="about__info">
+                <div class="about__info_head">
+                    <h3>UX/UI</h3>
+                </div>
+                <div class="about__info_text myClass">
+                    Of course, motivation really isn’t <a href="#" target="_blank">simple at all</a>. That is why there is multi-billion industry focused on self-help books, tapes, seminars, camps, and coaches.
+                </div>
+            </div>
+            <div class="about__info">
+                <div class="about__info_head">
+                    <h3 id="Motion">Motion</h3>
+                </div>
+                <div class="about__info_text myClass">
+                    As humans, we have progressed in so many ways, but we have lost touch with our bodies, nature, and the power of prayer. There seems to be a spiritual renaissance, of sorts, going on in the
+                    “new age” movement.
+                </div>
+            </div>
+            <div class="about__info">
+                <div class="about__info_head">
+                    <h3>Branding</h3>
+                </div>
+                <div class="about__info_text myClass">
+                    If at anytime, you notice that a friend of yours is getting demotivated about life, try to inspire him/her as much as you can. Even if you are physically away from your friend you can send
+                    him inspirational ecards and tell him to download motivational screensavers and wallpapers. So motivate everyone who needs the boost.
+                </div>
+            </div>
+            <div class="about__info">
+                <div class="about__info_head">
+                    <h3>Development</h3>
+                </div>
+                <div class="about__info_text myClass">
+                    Personally, the importance does not lie in what religion you are; however, a lack of religion does seem to run parallel with depression. This is classified as spiritual illness, which will
+                    have a negative effect on you mentally, physically, or totally.
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="Links"></div>
+        <div class="links">
+            <div class="links__head">
+                <h2>Links</h2>
+            </div>
+            <div class="links__info">
+                <div class="links__info_text"><a href=" https://github.com/ValentinGor " target="_blank">Harness The Power Of Words In Your Life</a></div>
+                <div class="links__info_year">2018</div>
+            </div>
+            <div class="links__info">
+                <div class="links__info_text"><a href=" https://github.com/ValentinGor " target="_blank">A Starter Guide To Self Improvement</a></div>
+                <div class="links__info_year">2018</div>
+            </div>
+            <div class="links__info">
+                <div class="links__info_text"><a href=" https://github.com/ValentinGor " target="_blank">Benjamin Franklin S Method Of Habit Formation</a></div>
+                <div class="links__info_year">2018</div>
+            </div>
+            <div class="links__info">
+                <div class="links__info_text"><a href=" https://github.com/ValentinGor " target="_blank">Does Your Life Lack Meaning</a></div>
+                <div class="links__info_year">2018</div>
+            </div>
+            <div class="links__info">
+                <div class="links__info_text"><a href=" https://github.com/ValentinGor " target="_blank">Hypnotize Yourself Into The Ghost Of Christmas Future</a></div>
+                <div class="links__info_year">2017</div>
+            </div>
+            <div class="links__info">
+                <div class="links__info_text"><a href=" https://github.com/ValentinGor " target="_blank">Hypnotize Yourself Into The Ghost Of Christmas Future</a></div>
+                <div class="links__info_year">2016</div>
+            </div>
+            <div class="links__info">
+                <div class="links__info_text"><a href=" https://github.com/ValentinGor " target="_blank">Self Motivation How To Keep Yourself Motivated</a></div>
+                <div class="links__info_year">2016</div>
+            </div>
+        </div>
+    </section>
+    <span class="line-1"></span>
+    <span class="line-2"></span>
+    <span class="line-3"></span>
+    <span class="line-4"></span>
+    <span class="line-5"></span>
+</div>
+<footer>
+    <div class="contact">
+        <div id="Contacts"></div>
+        <div class="contact__head">
+            <h2>Contacts</h2>
+        </div>
+        <div class="contact__info">
+            <div class="contact__info_text">
+                Positive pleasure-oriented goals are much more powerful motivators than negative fear-based ones.
+            </div>
+            <div class="contact__info_link">
+                <a href="#" target="_blank"><span class="icon ed-tl"></span></a>
+                <a href="#" target="_blank"><span class="icon ed-fb"></span></a>
+                <a href="#" target="_blank"><span class="icon ed-in"></span></a>
+            </div>
+        </div>
+        <div class="contact__form">
+            <form onsubmit="return validate();">
+                <div class="form-group-line">
+                    <label class="form-label" for="in_name">Name</label>
+                    <input type="text" class="form-input" id="in_name" placeholder="Incognito">
+                </div>
+                <div class="form-group-line">
+                    <label class="form-label" for="in_email">E-mail</label>
+                    <input type="email" class="form-input" id="in_email" placeholder="incognito@gmail.com">
+                </div>
+
+                <div class="form-group-line">
+                    <label class="form-label" for="message">Message</label>
+                    <textarea class="form-input" id="message" rows="3" placeholder="Your question or suggestion"></textarea>
+                </div>
+                <button type="submit" class="button-form">
+                    <span class="icon ed-tl"></span>
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="copyright__text">
+            Copyright &copy; 2020 Denis Abdullin – deab.ru
+        </div>
+        <div class="copyright__link">
+            <a href="#">Invoicing</a>
+            <a href="#">Documents</a>
+        </div>
+    </div>
+</footer>
 <script src="js/script.js"></script>
 </body>
 </html>
-<div class="wrapper">
-    <div class="header">
-        <div class="left-block">
-            <a href="#" class="links">WORKS</a>
-            <a href="#" class="links">ABOUT</a>
-        </div>
-
-        <div class="central-block">
-            <a href="/">
-                <img class="my-photo" src="./img/Avatar.png" alt="my-photo"/>
-            </a>
-        </div>
-
-        <div class="right-block">
-            <a href="#" class="links">LINKS</a>
-            <a href="#" class="links">CONTACTS</a>
-        </div>
-    </div>
-    <div class="main__head">
-
-        <div class="main__head_text">
-            <h1>
-                Motivation Is <hhhhhh>The</hhhhhh> First<br> Step To <span>Success</span>
-            </h1>
-        </div>
-        <div class="main__head_link">
-            <a href="#"><i class="icon-tv"></i></a>
-            <a href="#"><i class="icon-insta"></i></a>
-            <a href="#"><i class="icon-fb"></i></a>
-        </div>
-    </div>
-</div>
-<div class="wrapper" style="background-color: red;">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut cum explicabo illo in officiis placeat reprehenderit saepe. Aliquam corporis, ducimus id illo iure laborum natus quia recusandae.
-    Asperiores assumenda enim illo obcaecati ullam. Adipisci aliquam autem earum est eveniet, illo molestiae nam, nemo neque non odit officiis quaerat totam.
-</div>
-<div class="wrapper" style="background-color: red;">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur corporis dignissimos dolore facilis iusto laborum magni minus numquam odit omnis porro quaerat quisquam rem repellendus, sed soluta
-    tempora ut voluptate voluptates? Accusamus dolor exercitationem fuga iusto laboriosam natus nemo officiis praesentium saepe, voluptatem! Aut commodi odit porro quam totam?
-</div>
