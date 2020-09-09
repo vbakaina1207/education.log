@@ -637,3 +637,36 @@ footer {
     right: 20px;
     cursor: pointer;
 }
+.block{
+    display: block;
+}
+
+.container {
+    background-color: dimgrey;
+    width: 50%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+    justify-content: center;
+}
+
+.mas{
+    background-color: #aab6c1;
+    width: 50%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+    justify-content: center; /*Центрирование по горизонтали*/
+
+}
+ div.mas {
+    font-size: 24px;
+    color: red;
+}
+ div.container {
+     text-align: center;
+     font-size: 18px;
+     top: 50%;
+ }
