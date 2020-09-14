@@ -156,7 +156,7 @@ console.log(a);*/
 //по клику на третьем блоке вывести массив  в alert
 // по клику на четвертом блоке вывести массив на странице
 
-let fruits = ["apple","orange","plum"];
+/*let fruits = ["apple","orange","plum"];
 
 let a  = document.getElementById("container_1") ;
 let b = document.getElementById("container_2") ;
@@ -187,4 +187,58 @@ d.onclick = function () {
     elem.appendChild(newElem);
     console.log(newElem);
     console.log(newElem.innerText);
+} */
+//document.getElementById("container_1").onclick = function () {
+  /*  document.querySelector("#container_1").onclick = function () {
+        console.log(document.getElementById("container_1"));
+    document.querySelector("#container_1").classList.toggle("blue");
+        document.querySelector("#container_1").style.backgroundColor = "blue";
+    }
+*/
+/*document.querySelector("#container_1").oncontextmenu  = function () {
+    console.log(document.getElementById("container_1"));
+    document.querySelector("#container_1").classList.toggle("blue");
+   // document.querySelector("#container_1").style.backgroundColor = "blue";
+}*/
+/*function fun () {
+        console.log(document.getElementById("container_1"));
+        document.querySelector("#container_1").classList.toggle("blue");
+        //document.querySelector("#container_1").style.backgroundColor = "blue";
 }
+
+document.querySelector("#container_2").onmouseover  = function () {
+    console.log(document.getElementById("container_2"));
+    document.querySelector("#container_2").classList.add("blue");
+document.querySelector("#container_2").style.backgroundColor = "green";
+}
+document.querySelector("#container_2").onmouseout  = function () {
+    console.log(document.getElementById("container_2"));
+    document.querySelector("#container_2").classList.remove("blue");
+document.querySelector("#container_2").style.backgroundColor = "blue";
+}
+
+document.querySelector("#container_3").onmousemove = function () {
+    console.log(document.getElementById("container_3"));
+    document.querySelector("#container_3").classList.toggle("blue");
+}
+*/
+//сделать поле  форму из трех єлеиентов с  input + кнопка button тип submit
+// при нажатии на нопку вівести в консоль значениу  input
+// при focus, когда в инпут текст - менять цвет рамки инпута
+//написать функцию, которая в консоли будет віводить значение клавиши, нгажтой на клавиатуре
+let message = document.querySelector('.message');
+let form = document.querySelector('.subscription');
+let  passport = document.querySelector('#passport');
+let tel = document.querySelector('#tel');
+let email = document.querySelector('#email');
+let url = document.querySelector('#url');
+
+form.onsubmit = function(evt) {
+    evt.preventDefault();
+    message.textContent = "заявка принята "+passport.value+" "+tel.value+" "+email.value+" "+url.value;
+    console.log(message.textContent);
+};
+
+document.addEventListener('keydown', function () {
+    console.log(event.key);
+});
