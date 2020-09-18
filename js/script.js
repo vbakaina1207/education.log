@@ -226,7 +226,7 @@ document.querySelector("#container_3").onmousemove = function () {
 // при нажатии на нопку вівести в консоль значениу  input
 // при focus, когда в инпут текст - менять цвет рамки инпута
 //написать функцию, которая в консоли будет віводить значение клавиши, нгажтой на клавиатуре
-let message = document.querySelector('.message');
+/*let message = document.querySelector('.message');
 let form = document.querySelector('.subscription');
 let  passport = document.querySelector('#passport');
 let tel = document.querySelector('#tel');
@@ -241,4 +241,117 @@ form.onsubmit = function(evt) {
 
 document.addEventListener('keydown', function () {
     console.log(event.key);
-});
+});*/
+/*for (let a = 0; a<=10; a++) {
+    console.log(a);
+}*/
+/*let a = 0;
+while (a < 1000) {
+    console.log(a);
+    a++;
+}*/
+/*let a = 0;
+do {
+    console.log("Hello");
+    a++;
+}  while (a < 10) ;
+*/
+
+/*document.querySelector("#link_1").onclick = function () {
+
+    document.querySelector("#link_1").classList.add("active");
+    document.querySelector("#link_2").classList.remove("active");
+    document.querySelector("#link_3").classList.remove("active");
+    document.querySelector("#link_4").classList.remove("active");
+
+    document.querySelector(".tabs_content_1").classList.add("active");
+    document.querySelector(".tabs_content_2").classList.remove("active");
+    document.querySelector(".tabs_content_3").classList.remove("active");
+    document.querySelector(".tabs_content_4").classList.remove("active");
+}
+
+document.querySelector("#link_2").onclick = function (){
+    document.querySelector("#link_2").classList.add("active");
+    document.querySelector("#link_1").classList.remove("active");
+    document.querySelector("#link_3").classList.remove("active");
+    document.querySelector("#link_4").classList.remove("active");
+
+    document.querySelector(".tabs_content_2").classList.add("active");
+    document.querySelector(".tabs_content_1").classList.remove("active");
+    document.querySelector(".tabs_content_3").classList.remove("active");
+    document.querySelector(".tabs_content_4").classList.remove("active");
+}
+
+document.querySelector("#link_3").onclick = function (){
+    document.querySelector("#link_3").classList.add("active");
+    document.querySelector("#link_2").classList.remove("active");
+    document.querySelector("#link_1").classList.remove("active");
+    document.querySelector("#link_4").classList.remove("active");
+
+    document.querySelector(".tabs_content_3").classList.add("active");
+    document.querySelector(".tabs_content_2").classList.remove("active");
+    document.querySelector(".tabs_content_1").classList.remove("active");
+    document.querySelector(".tabs_content_4").classList.remove("active");
+}
+
+document.querySelector("#link_4").onclick = function (){
+    document.querySelector("#link_4").classList.add("active");
+    document.querySelector("#link_2").classList.remove("active");
+    document.querySelector("#link_3").classList.remove("active");
+    document.querySelector("#link_1").classList.remove("active");
+
+    document.querySelector(".tabs_content_4").classList.add("active");
+    document.querySelector(".tabs_content_2").classList.remove("active");
+    document.querySelector(".tabs_content_3").classList.remove("active");
+    document.querySelector(".tabs_content_1").classList.remove("active");
+}
+ */
+/*
+let elements = document.querySelectorAll(".tab_link");
+let tabs = document.querySelectorAll(".tab_content");
+
+let active = null;
+let activeElem = document.querySelectorAll(".active");
+
+
+function toggleAccordion(){
+    if(active) {
+            active.classList.remove("active");
+        }
+         this.classList.toggle('active');
+        this.nextElementSibling.classList.toggle('active');
+         active = this;
+         console.log(active);
+}
+
+let addClick = function (elem) {
+    elem.addEventListener('click',toggleAccordion);
+    //console.log(elem);
+};
+console.log(elements);
+for (let i = 0; i < elements.length; i++) {
+    elements[i].classList.remove("active");
+    for (let i = 0; i < tabs.length; i++) {
+        addClick(elements[i]);
+
+        addClick(tabs[i]);
+    }
+}
+*/
+let elements = document.querySelectorAll(".tab_link");
+let active = null;
+for (let i = 0; i < elements.length; i++) {
+    elements[i].classList.remove("active");
+    elements[i].nextElementSibling.classList.remove("active");
+    elements[i].onclick = function () {
+      if(active) {
+          active.classList.toggle("active");
+          active.nextElementSibling.classList.toggle("active");
+      }
+      active = this;
+      this.classList.toggle("active");
+      this.nextElementSibling.classList.toggle("active");
+
+  }
+}
+
