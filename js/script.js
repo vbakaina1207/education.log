@@ -434,7 +434,9 @@ $(document).ready(function(){
         swipe:true,
         centerMode: true,
         centerPadding: '40px',
-        slidesToShow: 2
+        slidesToShow: 2,
+            prevArrow: "<img src='https://www.flaticon.com/svg/static/icons/svg/143/143285.svg' class='prev' alt='1' style='width: 40px; height: 40px;'>",
+            nextArrow: "<img src='https://www.flaticon.com/svg/static/icons/svg/143/143286.svg' class='next' alt='2' style='width: 40px; height: 40px;'>"
         }
         );
 });

@@ -817,6 +817,14 @@ form input:active {
     color: rgba(14, 13, 13, 0.3);
     background-color: #7cf5f5;
 }
+.slick-arrow,
+ .slick-arrow{
+    position: absolute;
+     top: 350px;
+
+    z-index: 1;
+    cursor: pointer;
+}
 
 .your-class img {
     width: 400px;
@@ -826,5 +834,15 @@ form input:active {
     width: 400px;
     height: 300px;
     margin: 0 40px;
+}
+
+
+.next {
+  right:45%;
+}
+
+.prev {
+    left: calc(45% - 50px);
+
 }
 
