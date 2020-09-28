@@ -306,6 +306,20 @@ document.querySelector("#link_4").onclick = function (){
     document.querySelector(".tabs_content_1").classList.remove("active");
 }
  */
+
+/*
+et topLinks = document.querySelectorAll(".tab_link");
+
+for (let i = 0; i < topLinks.length; i++) {
+    topLinks[i].addEventListener("click", function() {
+        let activeClass = document.querySelector(".active");
+        activeClass.className = activeClass.className.replace(" active", "");
+        this.className += " active";
+    });
+}
+*/
+
+
 /*
 let elements = document.querySelectorAll(".tab_link");
 let tabs = document.querySelectorAll(".tab_content");
@@ -338,6 +352,7 @@ for (let i = 0; i < elements.length; i++) {
     }
 }
 */
+/*
 let elements = document.querySelectorAll(".tab_link");
 let active = null;
 for (let i = 0; i < elements.length; i++) {
@@ -354,4 +369,91 @@ for (let i = 0; i < elements.length; i++) {
 
   }
 }
+*/
+
+/*
+$( function() {
+    // console.log($("#tabs").children("div"));
+    $("#tabs").tabs(
+        {
+            hide: {effect: "clip", duration: 3000}
+        },
+        {
+            show: {effect: "clip", duration: 3000}
+        },
+        {
+            active: 2
+        },
+        {
+            classes: {
+                "ui-tabs-tab": "my-class"
+            }
+        },
+        {
+            //disabled: [ 0, 2 ]
+           // "destroy"
+        },
+        {
+           // activate: function( event, ui ) {}
+        }
+    );
+});
+
+$('.owl-carousel').owlCarousel({
+    loop: true,
+    margin:10,
+    nav:true,
+    autoplay: true,
+    autoplayTimeout: 1000,
+    fancybox: true,
+    //navText:[]
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+*/
+//сделать слайдер с картинками фансибокс
+
+$(document).ready(function(){
+    $('.your-class').slick({
+        accessibility: true,
+        AdaptiveHeight:true,
+      // fade:true,
+        focusOnSelect: true,
+        dots: false,
+        infinite: true,
+        //slidesPerRow: 2,
+        swipe:true,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 2
+        }
+        );
+});
+$('[data-fancybox="images"]').fancybox({
+    buttons : [
+        'slideShow',
+        'share',
+        'zoom',
+        'fullScreen',
+        'close'
+    ],
+    thumbs : {
+        autoStart : true
+    }
+});
+
+// console.log($(".tabs_content_1"));
+// console.log($(".tab_link"));
+// console.log($("#link_2"));
+
+
 

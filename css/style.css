@@ -655,6 +655,9 @@ footer {
     margin: 20px auto;
 }
 
+.my-class.ui-state-active {
+    background: red;
+}
 a.tabs_links {
     width: 25%;
     height: 50px;
@@ -814,3 +817,14 @@ form input:active {
     color: rgba(14, 13, 13, 0.3);
     background-color: #7cf5f5;
 }
+
+.your-class img {
+    width: 400px;
+    height: 300px;
+}
+.your-class a {
+    width: 400px;
+    height: 300px;
+    margin: 0 40px;
+}
+
