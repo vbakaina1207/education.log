@@ -421,7 +421,7 @@ $('.owl-carousel').owlCarousel({
 })
 */
 //сделать слайдер с картинками фансибокс
-
+/*
 $(document).ready(function(){
     $('.your-class').slick({
         accessibility: true,
@@ -452,10 +452,71 @@ $('[data-fancybox="images"]').fancybox({
         autoStart : true
     }
 });
-
+*/
 // console.log($(".tabs_content_1"));
 // console.log($(".tab_link"));
 // console.log($("#link_2"));
+/*$( document ).ready(function() {
+    $('form').submit(function (event) {
+        event.preventDefault();
+        // console.log('123');
+alert($(this).attr('action'));
+
+$.ajax({
+            type: $(this).attr('method'),
+            url: $(this).attr('action'),
+            data: new FormData(this),
+            contentType: false,
+            cache: false,
+            processData: false,
+            success: function (result) {
+                alert('123');
+                // alert(result);
+            },
+            dataType: "html"
+        });
+
+
+
+    });
+});*/
+
+$( document ).ready(function() {
+    $("#btn").click(
+
+        function(){
+            sendAjaxForm('my_form_success', 'my_form', 'form.php');
+            return false;
+        }
+    );
+});
+
+function sendAjaxForm(result_form, ajax_form, url) {
+    $.ajax({
+        url:     "form.php", //url страницы (action_ajax_form.php)
+        type:     "POST", //метод отправки
+        dataType: "html", //формат данных
+        data: $("#my_form").serialize(),  // Сеарилизуем объект
+        success: function(response) { //Данные отправлены успешно
+            alert("ok");
+            let result = $.parseJSON(response);
+            document.getElementById("my_form_success").innerHTML = "Имя: "+result.name+"<br>Телефон: "+result.email;
+        },
+        error: function(response) { // Данные не отправлены
+            alert("false");
+            document.getElementById('my_form_success').innerHTML = "Ошибка. Данные не отправленны.";
+        }
+    });
+}
+/*
+$('#my_form').submit(function(){
+
+    alert('Нажата submit-кнопка');
+
+    return false;
+});
+
+*/
 
 
 

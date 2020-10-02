@@ -12,6 +12,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="fonts/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
@@ -225,28 +226,32 @@
             </div>
         </div>
         <div class="contact__form">
-            <form onsubmit="return validate();">
+            <form action= "#" method="post" id="my_form">
                 <div class="form-group-line">
                     <label class="form-label" for="in_name">Name</label>
-                    <input type="text" class="form-input" id="in_name" placeholder="Incognito">
+                    <input type="text" class="form-input" name="name" id="in_name" placeholder="Incognito">
                 </div>
                 <div class="form-group-line">
                     <label class="form-label" for="in_email">E-mail</label>
-                    <input type="email" class="form-input" id="in_email" placeholder="incognito@gmail.com">
+                    <input type="email" class="form-input" name="email" id="in_email" placeholder="incognito@gmail.com">
                 </div>
 
                 <div class="form-group-line">
                     <label class="form-label" for="message">Message</label>
                     <textarea class="form-input" id="message" rows="3" placeholder="Your question or suggestion"></textarea>
                 </div>
-                <button type="submit" class="button-form">
+                <button type="submit" class="button-form" id="btn">
                     <span class="icon ed-tl"></span>
                 </button>
             </form>
+            <div id="my_form_success"></div>
         </div>
     </div>
     <div class="copyright">
         <div class="copyright__text">
+            <?php
+			echo "Hi!";
+		?>
             Copyright &copy; 2020 Denis Abdullin – deab.ru
         </div>
         <div class="copyright__link">
@@ -255,6 +260,11 @@
         </div>
     </div>
 </footer>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/simple-ajax-uploader/2.6.7/SimpleAjaxUploader.min.js"></script>-->
+<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>-->
 <script src="js/script.js"></script>
 </body>
 </html>

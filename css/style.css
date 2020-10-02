@@ -723,7 +723,7 @@ a.tab_link.active {
 .blue.container {
    background-color: #ffe300;
  }
-
+/*
 form {
     width: 60%;
     height: auto;
@@ -734,7 +734,7 @@ form {
     border-radius: 10px;
     box-shadow: 0 0 10px #a90f0f;
    /* min-height: 400px;*/
-}
+/*}*/
 
 fieldset {
     padding: 10px;
@@ -746,7 +746,7 @@ fieldset {
 fieldset legend {
     color: #34495e;
 }
-
+/*
 label {
     display: block;
     margin-bottom: 5px;
@@ -777,7 +777,7 @@ input[type="submit"] {
     background-color: #2c3e50;
     border: none;
     border-radius: 5px;
-}
+}*/
 .half-width {
     width: 50%;
     display: inline-block;
